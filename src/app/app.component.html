@@ -1,0 +1,18 @@
+
+
+<button (click)="save()">Gravar</button>
+<br/>
+<button (click)="adicionarComentario()">Adicionar Comentario</button>
+
+<form [formGroup]="editorForm" (ngSubmit)="onSubmit()">
+    <quill-editor #editor [style]="editorStyle" formControlName="editor"></quill-editor>
+    <button>Submit</button>
+</form>
+
+{{ conteudo | json }}
+
+<h4>Tags</h4>
+
+<a *ngFor="let value of metaData; index as i" class='comment-link' href='#' data-index='" + i +"' (click)="selectTag(value)">
+    <li class='list-group-item'>{{value.comment}}</li>
+</a>
