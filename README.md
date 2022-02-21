@@ -1,10 +1,5 @@
 # QuillLab
 
-[Quill Site](https://quilljs.com/docs/configuration/)
-[NGX Quill](https://www.npmjs.com/package/ngx-quill)
-
-
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
 ## Development server
